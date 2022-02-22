@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   color: darkslategrey;
 }
 
-h1{
-    padding-top: 10px;
+h1 {
+  padding-top: 10px;
 }
 
 .container {
