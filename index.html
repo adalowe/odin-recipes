@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <script src="./index.js"></script>
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width"/>
     <title>Odin Recipes</title>
-</head>
-<body>
-    <h1>Odin Recipes</h1>
-    <div class="container">
-        <a href="./recipes/coconut-creme-chocolate.html"><img src="./images/coconut-creme-chocolate.jpg" alt=""></a>
-        <a href="./recipes/blackberry-pie.html"><img src="./images/blackberry-pie.jpg" alt=""></a>
-        <a href="./recipes/mango-sorbet.html"><img src="./images/mango-sorbet.jpg" alt=""></a>
-        <a href="./recipes/blueberry-tarts.html"><img src="./images/blueberry-tarts.jpg" alt=""></a>
-        <a href="./recipes/lemon-pie.html"><img src="./images/lemon-pie.jpg" alt=""></a>
-        <a href="./recipes/cranberry-pecan-cookies.html"><img src="./images/cranberry-pecan-cookies.jpg" alt=""></a>
-        <a href="./recipes/rainbow-sherbet-cake.html"><img src="./images/rainbow-sherbet-cake.jpg" alt=""></a>
-        <a href="./recipes/chocolate-mousse.html"><img src="./images/chololate-mousse.jpg" alt=""></a>
-        <a href="./recipes/rhubarb-fool.html"><img src="./images/rhubarb-fool.jpg" alt=""></a>
+  </head>
+  <body> 
+    <div class="flex">
+        <div class="flex-1 flexbox">
+            <header>
+            <h1>Odin Recipes</h1>
+                 </header>
+        </div>
+    <div class="flex-2 flexbox">
+      <div class="flex-grid flexbox">
+        <div class="grid-container">
+       
+        <div> 
+            <a href="./recipes/coconut-creme-chocolate.html">
+            
+            <img  src="./images/coconut-creme-chocolate.jpg" alt="" />
+        
+        </a> 
+        </div>
+       
+        <div>
+          <a href="#" onclick='loadHtml("recipes", "blackberry-pie.html")';
+          >
+            
+            <img id="blackberry" src="./images/blackberry-pie.jpg" alt=""/>
+          
+          </a>
+        </div>
+        <div>
+          <a href="./recipes/mango-sorbet.html"
+            ><img src="./images/mango-sorbet.jpg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./recipes/blueberry-tarts.html"
+            ><img src="./images/blueberry-tarts.jpg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./recipes/lemon-pie.html"
+            ><img src="./images/lemon-pie.jpg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./recipes/cranberry-pecan-cookies.html"
+            ><img src="./images/cranberry-pecan-cookies.jpg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./recipes/rainbow-sherbet-cake.html"
+            ><img src="./images/rainbow-sherbet-cake.jpg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./recipes/chocolate-mousse.html"
+            ><img src="./images/chololate-mousse.jpg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./recipes/rhubarb-fool.html"><img src="./images/rhubarb-fool.jpg" alt=""></a>
+        </div>
+        <div>
+          <a href="./recipes/strawberry-trifle.html"><img src="./images/strawberry-trifle.jpg" alt=""></a>
+        </div>
+        </div>
       </div>
-</body>
+    </div>
+    <div class="flex-3 flexbox">
+        <div id="recipes">
+            
+       
+    </div>
+    </div>
+    
+  </body>
 </html>
