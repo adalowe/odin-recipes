@@ -1,5 +1,5 @@
 function loadHtml(id, filename) {
-    console.log('div id: ${id}, filename: ${filename}');
+    console.log(`div id: ${id}, filename: ${filename}`);
 
 let xhttp;
 let element = document.getElementById(id);
