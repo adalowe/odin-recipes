@@ -5,23 +5,111 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  color: darkslategrey;
-}
-
-h1 {
-  padding-top: 10px;
-}
-
-.container {
-  border: 1px solid gray;
   background: rgb(252, 229, 233);
-  margin: 10px auto;
-  width: 80%;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+  letter-spacing: 0.09rem;
+  line-height: 2rem;
+}
+
+.flex { /*PAGE FLEX CONTAINER*/
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.flexbox { /*flex-1 / flex-2 / flex-3*/
+  margin: 0.1rem 0;
+}
+
+/*---------------------------------*/
+/*RECIPE IMAGES START*/
+.flex-2 {
+  border: 10px ridge gray;
+  border-radius: 3px;
+
+}
+
+.flex-grid {/*grid container flexbox*/
+  max-width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin: 0;
+  background: #cea6d6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 2fr));
+  grid-template-rows: repeat(1, minmax(0, 2fr));
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+
+  background: rgb(252, 229, 233);
+  
+  border: 3px double gray;
+  box-shadow: 0 0.1rem 15px gray, 0.1rem 0 15px gray;
+  border-radius: 0.3%;
+}
+
+.grid-container:hover {
+  box-shadow: 0 0.3rem 20px gray, 0.3rem 0 20px gray;
+  border-radius: 0.3%;
+}
+
+.grid-container > div { /*img container div cell*/
+  margin: 2rem 1rem;
+ 
 }
 
 img {
-  margin: 30px;
+  max-width: 70%;
+  height: auto;
+  border: 0px solid transparent;
   border-radius: 50%;
+  transition: transform 0.3s ease-out;
+  transform: scale(1);
+  
 }
+
+img:hover {
+  transition: transform 0.3s ease;
+  border: 2px solid tomato;
+  transform: scale(1.1);
+  
+}
+/*RECIPE IMAGES END*/
+
+
+
+
+/*-----------------------------------------*/
+/*all is left is loneliness*/
+/*-----------------------------------------*/
+
+
+
+/* DESCRIPTION START*/
+
+.flex-3 { /*description*/
+  text-align: justify;
+  border: 10px ridge gray;
+  border-radius: 3px;
+}
+
+#description {
+  padding: 3rem 3rem;
+  height: auto;
+  max-width: 100%;
+
+}
+
+/* DESCRIPTION END*/
+
+
+
